@@ -1,0 +1,506 @@
+@keyframes catFullDance {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+  5% {
+    transform: translateX(-15px) translateY(-10px) rotate(-5deg) scale(1.05);
+  }
+  10% {
+    transform: translateX(-20px) translateY(-15px) rotate(-8deg) scale(1.1);
+  }
+  15% {
+    transform: translateX(-10px) translateY(-25px) rotate(-4deg) scale(1.05);
+  }
+  20% {
+    transform: translateX(10px) translateY(-80px) rotate(0deg) scale(1.3);
+  }
+  25% {
+    transform: translateX(25px) translateY(-30px) rotate(12deg) scale(0.9);
+  }
+  30% {
+    transform: translateX(20px) translateY(-20px) rotate(8deg) scale(0.95);
+  }
+  37.5% {
+    transform: translateX(-15px) translateY(-10px) rotate(-15deg) scale(1.05);
+  }
+  40% {
+    transform: translateX(-25px) translateY(-35px) rotate(-10deg) scale(1.1);
+  }
+  45% {
+    transform: translateX(-20px) translateY(-15px) rotate(-6deg) scale(1.02);
+  }
+  50% {
+    transform: translateX(30px) translateY(-25px) rotate(12deg) scale(0.9);
+  }
+  55% {
+    transform: translateX(25px) translateY(-40px) rotate(15deg) scale(0.95);
+  }
+  62.5% {
+    transform: translateX(-25px) translateY(-20px) rotate(-12deg) scale(1.05);
+  }
+  65% {
+    transform: translateX(-30px) translateY(-45px) rotate(-18deg) scale(1.1);
+  }
+  70% {
+    transform: translateX(-15px) translateY(-25px) rotate(-8deg) scale(1.02);
+  }
+  75% {
+    transform: translateX(20px) translateY(-35px) rotate(-15deg) scale(1.05);
+  }
+  80% {
+    transform: translateX(15px) translateY(-50px) rotate(-10deg) scale(1.08);
+  }
+  87.5% {
+    transform: translateX(-10px) translateY(-15px) rotate(-5deg) scale(1.02);
+  }
+  90% {
+    transform: translateX(-5px) translateY(-60px) rotate(0deg) scale(1.2);
+  }
+  95% {
+    transform: translateX(5px) translateY(-20px) rotate(3deg) scale(1.05);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes catBodyBounce {
+  0%, 100% { transform: scaleY(1) scaleX(1); }
+  25% { transform: scaleY(0.9) scaleX(1.1); }
+  75% { transform: scaleY(1.1) scaleX(0.9); }
+}
+
+@keyframes catTailWag {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-20deg); }
+  50% { transform: rotate(15deg); }
+  75% { transform: rotate(-25deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes catEarWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  33% { transform: rotate(-8deg); }
+  66% { transform: rotate(12deg); }
+}
+
+@keyframes catPawStep {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(-15deg); }
+  50% { transform: translateY(-5px) rotate(10deg); }
+  75% { transform: translateY(-12px) rotate(-10deg); }
+}
+
+@keyframes catHeadBob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  20% { transform: translateY(-8px) rotate(-5deg); }
+  40% { transform: translateY(-12px) rotate(8deg); }
+  60% { transform: translateY(-6px) rotate(-3deg); }
+  80% { transform: translateY(-10px) rotate(6deg); }
+}
+
+@keyframes catShimmy {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-8px) rotate(-3deg); }
+  75% { transform: translateX(8px) rotate(3deg); }
+}
+
+@keyframes catSpin {
+  0%, 80% { transform: rotate(0deg) scale(1); }
+  85% { transform: rotate(90deg) scale(1.1); }
+  90% { transform: rotate(180deg) scale(0.9); }
+  95% { transform: rotate(270deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes catSpecialMove {
+  0%, 90% { transform: translateY(0) rotate(0deg) scale(1); }
+  92% { transform: translateY(-80px) rotate(180deg) scale(1.3); }
+  94% { transform: translateY(-40px) rotate(360deg) scale(0.8); }
+  96% { transform: translateY(-60px) rotate(540deg) scale(1.1); }
+  98% { transform: translateY(-20px) rotate(720deg) scale(1.2); }
+  100% { transform: translateY(0) rotate(720deg) scale(1); }
+}
+
+
+@keyframes catWiggleBody {
+  0%, 100% { transform: skewX(0deg) scaleX(1); }
+  33% { transform: skewX(5deg) scaleX(1.05); }
+  66% { transform: skewX(-5deg) scaleX(0.95); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rainbow {
+  0% { filter: hue-rotate(0deg); }
+  25% { filter: hue-rotate(90deg); }
+  50% { filter: hue-rotate(180deg); }
+  75% { filter: hue-rotate(270deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.dancing-cat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.cat-stage {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-stage::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: rotate 3s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.dancing-cat {
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.dancing-cat:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.4));
+}
+
+.dancing-cat.dancing {
+  animation:
+    catFullDance 4s ease-in-out infinite,
+    rainbow 4s linear infinite;
+  transform-origin: center bottom;
+}
+
+.dancing-cat.dancing .cat-tail {
+  animation: catTailWag 0.8s ease-in-out infinite;
+  transform-origin: right center;
+}
+
+.dancing-cat.dancing .cat-body {
+  animation: catBodyBounce 1.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.dancing-cat.dancing .cat-head {
+  animation: catHeadBob 1.2s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.dancing-cat.dancing .cat-ear-left {
+  animation: catEarWiggle 0.6s ease-in-out infinite reverse;
+  transform-origin: bottom center;
+}
+
+.dancing-cat.dancing .cat-ear-right {
+  animation: catEarWiggle 0.7s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.dancing-cat.dancing .cat-paw.front-left {
+  animation: catPawStep 1s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.dancing-cat.dancing .cat-paw.front-right {
+  animation: catPawStep 1s ease-in-out infinite 0.5s;
+  transform-origin: center bottom;
+}
+
+.dancing-cat.dancing .cat-paw.back-left {
+  animation: catPawStep 1.2s ease-in-out infinite 0.2s;
+  transform-origin: center bottom;
+}
+
+.dancing-cat.dancing .cat-paw.back-right {
+  animation: catPawStep 1.2s ease-in-out infinite 0.8s;
+  transform-origin: center bottom;
+}
+
+.animation-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.primary-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.speed-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.speed-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.speed-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.speed-button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.speed-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.speed-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.speed-button.active {
+  background: linear-gradient(135deg, #FF6B35, #F7931E);
+  color: white;
+  font-weight: bold;
+}
+
+.keyboard-hints {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.keyboard-hints p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.keyboard-hints kbd {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  margin: 0 2px;
+}
+
+.accessibility-notice {
+  background: rgba(255, 193, 7, 0.9);
+  color: #856404;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 193, 7, 0.5);
+}
+
+.accessibility-notice p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.dance-button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.dance-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.5s;
+}
+
+.dance-button:hover::before {
+  left: 100%;
+}
+
+.dance-button.start {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+}
+
+.dance-button.start:hover {
+  background: linear-gradient(135deg, #45a049, #3d8b40);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.dance-button.stop {
+  background: linear-gradient(135deg, #f44336, #da190b);
+  color: white;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.dance-button.stop:hover {
+  background: linear-gradient(135deg, #da190b, #c62828);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.instructions {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+.instructions p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .dancing-cat {
+    width: 140px;
+    height: 140px;
+  }
+
+  .cat-stage {
+    padding: 20px;
+  }
+
+  .dance-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .instructions {
+    padding: 15px;
+    max-width: 300px;
+  }
+
+  .instructions p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dancing-cat {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cat-stage {
+    padding: 15px;
+  }
+
+  .dance-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .instructions {
+    padding: 12px;
+    max-width: 250px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dancing-cat.dancing {
+    animation: wiggle 2s ease-in-out infinite;
+  }
+
+  .dance-button.stop {
+    animation: none;
+  }
+
+  .cat-stage::before {
+    animation: none;
+  }
+}

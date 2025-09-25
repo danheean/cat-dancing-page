@@ -1,0 +1,94 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bodyGradient" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#FFB347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C42;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="stripesGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#CC5500;stop-opacity:0.9" />
+    </radialGradient>
+  </defs>
+
+  <!-- Cat tail (animated separately) -->
+  <g class="cat-tail">
+    <path d="M40 130 Q20 120 15 100 Q10 80 20 60 Q30 50 40 55"
+          stroke="url(#bodyGradient)" stroke-width="20" fill="none"
+          stroke-linecap="round"/>
+    <ellipse cx="25" cy="70" rx="6" ry="2" fill="url(#stripesGradient)" transform="rotate(-45 25 70)"/>
+    <ellipse cx="35" cy="90" rx="6" ry="2" fill="url(#stripesGradient)" transform="rotate(-30 35 90)"/>
+  </g>
+
+  <!-- Cat body -->
+  <g class="cat-body">
+    <ellipse cx="100" cy="130" rx="60" ry="50" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="2"/>
+    <!-- Cat stripes on body -->
+    <ellipse cx="80" cy="120" rx="12" ry="4" fill="url(#stripesGradient)" transform="rotate(-15 80 120)"/>
+    <ellipse cx="120" cy="120" rx="12" ry="4" fill="url(#stripesGradient)" transform="rotate(15 120 120)"/>
+    <ellipse cx="100" cy="140" rx="15" ry="4" fill="url(#stripesGradient)"/>
+  </g>
+
+  <!-- Cat head -->
+  <g class="cat-head">
+    <circle cx="100" cy="70" r="45" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="2"/>
+
+    <!-- Cat stripes on head -->
+    <ellipse cx="85" cy="55" rx="8" ry="3" fill="url(#stripesGradient)" transform="rotate(-20 85 55)"/>
+    <ellipse cx="115" cy="55" rx="8" ry="3" fill="url(#stripesGradient)" transform="rotate(20 115 55)"/>
+    <ellipse cx="100" cy="45" rx="10" ry="3" fill="url(#stripesGradient)"/>
+
+    <!-- Cat eyes -->
+    <ellipse cx="85" cy="65" rx="8" ry="12" fill="#2E8B57"/>
+    <ellipse cx="115" cy="65" rx="8" ry="12" fill="#2E8B57"/>
+    <ellipse cx="85" cy="63" rx="3" ry="6" fill="#90EE90"/>
+    <ellipse cx="115" cy="63" rx="3" ry="6" fill="#90EE90"/>
+    <circle cx="87" cy="60" r="2" fill="white"/>
+    <circle cx="117" cy="60" r="2" fill="white"/>
+
+    <!-- Cat nose -->
+    <path d="M100 80 L95 85 L105 85 Z" fill="#FF69B4"/>
+
+    <!-- Cat mouth -->
+    <path d="M100 87 Q95 92 90 90" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M100 87 Q105 92 110 90" stroke="#333" stroke-width="2" fill="none"/>
+
+    <!-- Cat whiskers -->
+    <line x1="50" y1="75" x2="75" y2="73" stroke="#333" stroke-width="2"/>
+    <line x1="50" y1="85" x2="75" y2="83" stroke="#333" stroke-width="2"/>
+    <line x1="125" y1="73" x2="150" y2="75" stroke="#333" stroke-width="2"/>
+    <line x1="125" y1="83" x2="150" y2="85" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Cat ears (animated separately) -->
+  <g class="cat-ears">
+    <g class="cat-ear-left">
+      <path d="M70 40 L60 20 L85 30 Z" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="2"/>
+      <path d="M70 35 L65 25 L80 32 Z" fill="#FFD4C4"/>
+    </g>
+    <g class="cat-ear-right">
+      <path d="M130 40 L140 20 L115 30 Z" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="2"/>
+      <path d="M130 35 L135 25 L120 32 Z" fill="#FFD4C4"/>
+    </g>
+  </g>
+
+  <!-- Cat paws (animated separately) -->
+  <g class="cat-paws">
+    <g class="cat-paw front-left">
+      <ellipse cx="70" cy="170" rx="12" ry="8" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="1"/>
+      <circle cx="70" cy="172" r="3" fill="#FF69B4"/>
+    </g>
+    <g class="cat-paw front-right">
+      <ellipse cx="130" cy="170" rx="12" ry="8" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="1"/>
+      <circle cx="130" cy="172" r="3" fill="#FF69B4"/>
+    </g>
+    <g class="cat-paw back-left">
+      <ellipse cx="85" cy="175" rx="10" ry="6" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="1"/>
+      <circle cx="85" cy="177" r="2.5" fill="#FF69B4"/>
+    </g>
+    <g class="cat-paw back-right">
+      <ellipse cx="115" cy="175" rx="10" ry="6" fill="url(#bodyGradient)" stroke="#E67E00" stroke-width="1"/>
+      <circle cx="115" cy="177" r="2.5" fill="#FF69B4"/>
+    </g>
+  </g>
+
+</svg>
